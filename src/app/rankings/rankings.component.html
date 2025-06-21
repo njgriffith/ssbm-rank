@@ -1,0 +1,21 @@
+<div class="landing-page">
+    <div class="table-container">
+        <table class="rank-table">
+            <thead>
+                <tr>
+                    <th class="centered">Rank</th>
+                    <th class="left">Player</th>
+                    <th class="centered">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let player of players" (click)="toPlayerPage(player, player.id)" class="player-row">
+                    <td class="centered">{{player.rank}}</td>
+                    <td>{{player.name}}</td>
+                    <td class="centered">{{player.points}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

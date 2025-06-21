@@ -1,0 +1,41 @@
+.landing-page {
+    background-image: url('/assets/title-screen.gif');
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.table-container{
+    padding-top: 5em;
+}
+
+.rank-table{
+    background: #ddd;
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+thead>tr{
+    background-color: purple;
+    color: white;
+}
+
+.centered{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.player-row{
+    cursor: pointer;
+}
+
+.player-row:hover{
+    background-color: purple;
+    color: #ddd;
+}
+
+td, th{
+    padding: 0.5em 0;
+}

@@ -1,0 +1,20 @@
+<button routerLink="/rankings">← Back to Rankings</button>
+<div class="page-title">{{player?.name}}</div>
+<div class="player-data-container">
+    <div class="player-details">
+        <div>Rank: {{player?.rank}}</div>
+        <div>{{player?.points}} pts</div>
+    </div>
+    <div class="best-results-container">
+        <div>Best Events</div>
+        <div *ngFor="let event of bestEvents">
+            {{player?.bestEvents[event].points}}
+        </div>
+    </div>
+    <div class="results-container">
+        <div>All Events</div>
+        <div *ngFor="let event of events">
+            {{player?.events[event].points}}
+        </div>
+    </div>
+</div>
